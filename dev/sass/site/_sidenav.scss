@@ -1,0 +1,155 @@
+.site-navigation {
+  background-color: #f4f4f4;
+  float: left;
+  overflow: auto;
+  min-height: 100vh;
+  position: relative;
+  z-index: 99;
+
+  @include breakpoint(tablet) {
+    position: fixed;
+    left: -300px;
+    transition: all .3s ease;
+    &>div {
+      margin-top: 2em;
+    }
+    &.open-sidenav {
+      left: 0;;
+    }
+  }  
+  
+  .logo {
+    position: fixed;
+    padding: $space-xs;
+  }
+
+  nav {
+    position: fixed;
+    top: 4em;
+    padding: $space-xs;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: $space-xxs 0; 
+      text-decoration: none;
+      font-weight: bold;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      color: $color__text-main;
+
+      &.active::before {
+        content: '';
+        background-color: $color__primary;
+        width: .5em;
+        height: .5em;
+        border-radius: 100%;
+        position: absolute;
+        left: 10px;
+      }
+      svg {
+        margin-left: .25em;
+        margin-top: .25em;
+      }
+
+      &:hover{
+        color: $color__link-hover;
+        cursor: pointer;
+      }
+
+      a {
+        color: $color__text-main;
+        &:hover{
+          color: $color__link-hover;
+          cursor: pointer;
+        }
+      }
+      
+    }
+    .showmore-content {
+      li {
+        font-weight: normal;
+        padding-left: .5em;
+      }
+    }
+  }
+
+  .footer-nav {
+    position: fixed;
+    width: 300px;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    padding: $space-xs;
+  }
+}
+
+.open-menu {
+  display: none;
+  @include breakpoint(tablet) {
+    display: block;
+    position: fixed;
+    display: flex;
+    top: .5em;
+    left: .5em;
+    z-index: 999;
+    align-items: center;
+    padding: .5em 1em;
+
+    &::before {
+      content: url('./dev/icons/sprite-icons/list.svg');
+      position: absolute;
+      left: .5em;
+      top: calc(50% - 16px);
+    }
+    &.active::before {
+      content: url('./dev/icons/sprite-icons/x.svg');
+      position: absolute;
+      left: .5em;
+      top: calc(50% - 16px);
+
+    }
+    span {
+      margin-left: 1.5em;
+      margin-right: .25em;
+    }
+  }
+}
+
+#wrap {
+  display: flex;
+  position: relative;
+  aside {
+    width: 300px;
+  }
+}
+
+.home-cards {
+  svg.icon {
+    fill: $color__primary;
+  }
+}
+
+.shadow {
+  background: #FFFFFF;
+box-shadow: 0 0 0 1px rgba(50,50,50,0.04), 0 1px 3px 0 rgba(50,50,50,0.08), 0 16px 24px 0 rgba(50,50,50,0.06);
+border-radius: 16px;
+
+}
+
+
+.showmore-content {
+  display: none;
+}
+
+.open .showmore-content {
+  display: block;
+}
+
+.showmore.open svg {
+  transform: rotateX(180deg);
+}

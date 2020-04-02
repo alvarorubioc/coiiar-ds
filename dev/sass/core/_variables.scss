@@ -1,0 +1,39 @@
+/* main colors */
+$color__primary: #482982;
+$color__secondary: #D71936;
+$color__accent: #051D3B;
+$color__white: #ffffff;
+$color__gradient: linear-gradient(50deg, #09376E 0%, #051D3B 100%);
+
+/* feedback */
+$color__success: #88c459;
+$color__error: #f5414f;
+$color__warning: #ffd137;
+
+/* text colors */
+$color__link: #09376E;
+$color__link-hover: #0F5CBA;
+$color__text-main: #212121;
+
+/* Backgrounds colors */
+$color__ligth: #f2f2f2;
+$color__grey: #5E5B61;
+$color__ligth-grey: #b0aeb6;
+
+/* Blue Colors */
+$color__blue: #051D3B;
+$color__blue-light: #0F5CBA;
+$color__blue-dark: #000E21;
+
+/* Border radius */
+$border__radius: 2px;
+
+/* Fonts */
+$font__main: 'Futura Bk', Trebuchet MS, Arial, sans-serif;
+$font__heding: "Futura", sans-serif;
+$font__light: "Futura", sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-header: 1;
+$font__line-height-pre: 1.6;
