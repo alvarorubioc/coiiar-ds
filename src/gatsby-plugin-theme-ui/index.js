@@ -3,15 +3,14 @@ import colors from "./colors";
 import headings from "./headings";
 
 const transition = "0.2s ease-out";
-const systemFonts =
-  "-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif";
+const bodyFonts = "Exo";
 
 export default {
-  initialColorMode: `dark`,
+  initialColorMode: `default`,
   colors,
   fonts: {
-    body: systemFonts,
-    heading: systemFonts,
+    body: bodyFonts,
+    heading: bodyFonts,
     monospace: "Menlo, monospace"
   },
   fontSizes: [12, 14, 16, 24, 28, 36, 48, 64],
