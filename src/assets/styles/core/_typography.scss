@@ -101,7 +101,7 @@ h1 {
     }
     
     &.display {
-        font-size: 3.5em;
+        font-size: 3.5em !important;
         @include breakpoint(laptop) {
             font-size: 2.5em;
         }
@@ -139,13 +139,12 @@ h5, .text-h5 {
 h6, .text-h6 {
     text-transform: uppercase;
     font-weight: bold;
-    color: $color__primary;
 }
 
 .text-caption {
     text-transform: uppercase;
     font-weight: bold;
-    @include font-size(1);
+    color: $color__primary;
 }
 
 .uppercase {

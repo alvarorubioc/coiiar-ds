@@ -13,7 +13,7 @@ export default {
     heading: bodyFonts,
     monospace: "Menlo, monospace"
   },
-  fontSizes: [12, 14, 16, 24, 28, 36, 48, 64],
+  fontSizes: [12, 14, 16, 18, 22.5, 28, 36, 54],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -21,7 +21,7 @@ export default {
   },
   lineHeights: {
     body: 1.5,
-    heading: 1.125
+    heading: 1.2
   },
   letterSpacings: {
     body: "normal",

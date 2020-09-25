@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `COIIAR Design System`,
     name: `COIIAR`,
-    siteUrl: `https://gatsby-theme-document.netlify.com`,
+    siteUrl: `https://imagen.coiiar.es`,
     description: `This is my description that will be used in the meta tags and important for search results`,
     social: [
       {
@@ -15,7 +15,7 @@ module.exports = {
       }
     ],
     sidebarConfig: {
-      forcedNavOrder: ["/introduction", "/branding", "/guía-de-estilos", "/componentes", "/patrones", "/downloads"],
+      forcedNavOrder: ["/introduction", "/branding", "/guia-de-estilos", "/componentes", "/patrones", "/descargas"],
       ignoreIndex: true
     }
   },

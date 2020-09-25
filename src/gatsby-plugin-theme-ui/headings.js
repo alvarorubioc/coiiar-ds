@@ -17,26 +17,26 @@ const headingBase = {
 export default {
   h1: {
     ...headingBase,
-    fontSize: 6
+    fontSize: 7
   },
   h2: {
     ...headingBase,
-    fontSize: 4
+    fontSize: 6
   },
   h3: {
     ...headingBase,
-    fontSize: 3
+    fontSize: 5
   },
   h4: {
     ...headingBase,
-    fontSize: 2
+    fontSize: 4
   },
   h5: {
     ...headingBase,
-    fontSize: 1
+    fontSize: 3
   },
   h6: {
     ...headingBase,
-    fontSize: 0
+    fontSize: 2
   }
 };
